@@ -1,0 +1,56 @@
+
+
+.navBar{
+    width: 15%;
+    height:100%;
+    background-color: #252424;
+    position: fixed;
+    left: 0;
+    top: 0;
+    align-items: center;
+}
+
+.topSpace{
+    color: white;
+    height: 7%;
+    padding-left: 10%;
+}
+
+.selection{
+    color: white;
+    height: 7%;
+    width: auto;
+    font-size: medium;
+    padding-left: 15%;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.selection:hover{
+    background-color: #b518ff;
+    transition-delay: 50ms;
+    
+}
+
+.selected{
+    color: white;
+    height: 7%;
+    width: auto;
+    font-size: large;
+    padding-left: 15%;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    background-color: #b518ff;
+}
+
+
+
+i{
+    color: white;
+    font-size: larger;
+}
+a {
+    text-decoration: none;
+  }

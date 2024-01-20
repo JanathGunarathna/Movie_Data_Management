@@ -1,0 +1,43 @@
+<div class="col-md-5 offset-md-3">
+    <h2>Update Movie</h2>
+    <br>
+    <form (ngSubmit)="onSubmit()" [formGroup]="updateForm">
+  
+      <div class="form-group">
+        <label for="movieName">Movie Name</label>
+        <input type="text" class="form-control" id="movieName" formControlName="movieName">
+      </div>
+  
+      <div class="form-group">
+        <label for="year">Year</label>
+        <input type="text" class="form-control" id="year" formControlName="year">
+      </div>
+  
+      <div class="form-group">
+        <label for="rating">Rating</label>
+        <input type="number" class="form-control" id="rating" formControlName="rating">
+      </div>
+  
+      <div class="form-group">
+        <label for="duration">Duration</label>
+        <input type="text" class="form-control" id="duration" formControlName="duration">
+      </div>
+  
+      <div class="form-group">
+        <label for="genre">Genre</label>
+        <input type="text" class="form-control" id="genre" formControlName="genre">
+      </div>
+  
+      <br>
+  
+      <button type="submit" class="btn btn-success" [disabled]="updateForm.invalid">Submit</button>
+  
+      <div *ngIf="isMessageSubmitted" class="alert alert-success mt-3">
+        Movie Update successfully!
+      </div>
+  
+    </form>
+    <app-navbar></app-navbar>
+    <router-outlet></router-outlet>
+  </div>
+  

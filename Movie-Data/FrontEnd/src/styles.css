@@ -1,0 +1,27 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url("assets/background.jpg");
+    background-size: cover;
+    color: #ddd;
+    font-size: 20px;
+}
+h2{
+    text-align: center;
+    font-size: 75px;
+    color: #ddd;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.newPageContent
+{
+    margin-left: 20%;
+    width: 80%;
+    height: 100%;
+}
+th, td {
+    border-bottom: 1px solid #ddd;
+    font: optional;
+    font-display: block;
+  }
+
+  tr:hover {background-color: black;}

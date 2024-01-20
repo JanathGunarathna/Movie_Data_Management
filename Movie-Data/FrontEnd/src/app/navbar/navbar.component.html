@@ -1,0 +1,21 @@
+<main>
+    <div class="navBar">
+      <div class="topSpace"></div>
+  
+      <a routerLink="create-movie" (click)="selectedComponent('cr')">
+        <div [class]="activeComponent === 'cr' ? 'selected' : 'selection'">
+          <i class="bi bi-bell"></i>&nbsp;&nbsp;Create Movies
+        </div>
+      </a>
+      <a routerLink="movies" (click)="selectedComponent('movies')">
+        <div [class]="activeComponent === 'movies' ? 'selected' : 'selection'">
+          <i class="bi bi-bell"></i>&nbsp;&nbsp;Movie List
+        </div>
+      </a>
+    </div>
+  
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </main>
+  
